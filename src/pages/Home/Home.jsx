@@ -2,8 +2,8 @@ import React from "react";
 
 const Home = () => {
   return (
-    <section>
-      <p>Hey, I'm Edward</p>
+    <section className="min-h-screen flex flex-col justify-center items-center">
+      <h1>Hey, I'm Edward</h1>
       <p>an aspiring developer</p>
     </section>
   );
