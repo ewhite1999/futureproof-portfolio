@@ -1,0 +1,20 @@
+{
+  "beforefutureproof": {
+    "intro": "After working my way through The Odin Project and freeCodeCamp, I wanted to test my skills by building some sites of my own. The first site is a store of simple vegetarian recipes, the second is meant to be used as a starter for physics A-level students. Both sites were designed to be viewed on mobile but do have simple styling for when viewed on desktop.",
+    "learning": [
+      "How to use JavaScript to manipulate the DOM",
+      "How to use Fetch and async/await to retrieve then handle data from a JSON file",
+      "How to create a hamburger menu with an event listener",
+      "How to use media queries to make the webpage responsive"
+    ],
+    "technologies": [
+      "Fetch & Async/await - I needed to retrieve external data and async/await is my preferred method of handling a promise",
+      "JavaScript - I wanted to dynamically display content depending on what the user has requested",
+      "SASS - I used this for the vendor prefixes and styling. I find the nested hierarchy is much clearer than vanilla CSS"
+    ],
+    "nexttime": [
+      "Create different react components and pass recipe data in as props",
+      "Use a bundler, such as webpack, to separate the JavaScript into different files for a clearer codebase"
+    ]
+  }
+}
