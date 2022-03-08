@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import Intro from "../Intro";
+import Learning from "../Learning";
 import * as data from "./data.json";
 
 const PortfolioSection = () => {
@@ -18,6 +19,7 @@ const PortfolioSection = () => {
     return (
       <>
         <Intro intro={intro} />
+        <Learning learning={learning} />
       </>
     );
   } catch (e) {

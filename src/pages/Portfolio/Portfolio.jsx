@@ -7,9 +7,9 @@ const Portfolio = () => {
     <section>
       <h2>Portfolio</h2>
       <nav>
-        <NavLink to="/before-futureproof">Before futureproof</NavLink>
-        <NavLink to="/confessions-page">Confessions page</NavLink>
-        <NavLink to="/habit-tracker">Habit Tracker</NavLink>
+        <NavLink to="/before-futureproof">Before&nbsp;futureproof</NavLink>
+        <NavLink to="/confessions-page">Confessions&nbsp;page</NavLink>
+        <NavLink to="/habit-tracker">Habit&nbsp;Tracker</NavLink>
       </nav>
       <Routes>
         <Route path="/" element={<p>Click on a link to see more about it</p>} />

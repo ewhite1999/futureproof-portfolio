@@ -3,7 +3,8 @@ import React from "react";
 const Intro = (props) => {
   return (
     <>
-      <p>{props.intro}</p>;
+      <h3>Background:</h3>
+      <p>{props.intro}</p>
     </>
   );
 };
