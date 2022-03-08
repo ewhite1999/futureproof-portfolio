@@ -7,7 +7,7 @@ const Home = () => {
         Hey, I'm <span className=" text-pink-600">Edward White.</span>
       </h1>
       <p className="text-2xl mt-1 sm:text-4xl sm:mt-2 2xl:text-5xl 2xl:mt-4">
-        An aspiring developer
+        An aspiring developer.
       </p>
     </section>
   );
