@@ -2,6 +2,8 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import PortfolioSection from "../../components/PortfolioSection";
 import { NavLink } from "react-router-dom";
+import preFutureproof from "../../imgs/preFutureproof.png";
+import tldr from "../../imgs/tldr.png";
 import Habitat from "../../imgs/Habitat.png";
 const Portfolio = () => {
   return (
@@ -10,12 +12,16 @@ const Portfolio = () => {
         projects
       </h2>
       <div className="mx-auto w-32 border-b-4 border-solid border-pink-600"></div>
-      <div className="grid">
-        <div>
-          <img src={Habitat} alt="pre futureproof projects" />
+      <div className="grid max-w-7xl mx-auto sm:grid-cols-2">
+        <div className="bg-white">
+          <img src={preFutureproof} alt="pre futureproof projects" />
         </div>
-        <div></div>
-        <div></div>
+        <div>
+          <img src={tldr} alt="too long didn't read project" />
+        </div>
+        <div>
+          <img src={Habitat} alt="habit at project" />
+        </div>
       </div>
       {/* <nav>
         <NavLink to="/before-futureproof">Before&nbsp;futureproof</NavLink>
