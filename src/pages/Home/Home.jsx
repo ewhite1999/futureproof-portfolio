@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Home = () => {
   return (
@@ -11,9 +12,15 @@ const Home = () => {
           An aspiring developer.
         </p>
       </div>
-      <button className=" border-2 px-4 py-2 font-extralight hover:bg-transparent hover:bg-pink-600 hover:border-pink-600 hover:transition-colors hover:duration-500">
+      <Link
+        to="portfolio"
+        spy={true}
+        smooth={true}
+        duration={800}
+        className=" border-2 px-4 py-2 font-extralight hover:bg-transparent hover:bg-pink-600 hover:border-pink-600 hover:transition-colors hover:duration-500"
+      >
         See my Portfolio
-      </button>
+      </Link>
     </section>
   );
 };

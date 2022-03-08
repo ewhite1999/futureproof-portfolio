@@ -4,7 +4,7 @@ import PortfolioSection from "../../components/PortfolioSection";
 import { NavLink } from "react-router-dom";
 const Portfolio = () => {
   return (
-    <section>
+    <section id="portfolio" className="min-h-screen">
       <h2>Portfolio</h2>
       <nav>
         <NavLink to="/before-futureproof">Before&nbsp;futureproof</NavLink>
