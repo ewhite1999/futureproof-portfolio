@@ -2,7 +2,7 @@ const config = require("./webpack.config.js");
 
 config.devServer = {
   historyApiFallback: true,
-  port: 8081,
+  port: 8080,
   liveReload: true,
   open: true,
 };
