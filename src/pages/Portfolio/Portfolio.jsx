@@ -11,7 +11,7 @@ const Portfolio = () => {
       <h2 className=" text-center text-4xl uppercase font-medium pt-14 py-3">
         projects
       </h2>
-      <div className="mx-auto w-32 border-b-4 border-solid border-pink-600"></div>
+      <div className="mx-auto w-32 border-b-4 border-solid border-pink-600 mb-10"></div>
       <div className="grid max-w-7xl mx-auto sm:grid-cols-2">
         <div className="bg-white">
           <img src={preFutureproof} alt="pre futureproof projects" />
