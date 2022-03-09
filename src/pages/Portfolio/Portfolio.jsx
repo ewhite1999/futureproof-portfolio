@@ -27,7 +27,10 @@ const Portfolio = () => {
         >
           <img src={preFutureproof} alt="pre futureproof projects" />
           <div className="opacity-0 aboutDiv absolute h-full w-full bg-white top-0 transition-opacity duration-500">
-            <h1>Learn more</h1>
+            <p className="p-5">
+              Details about this project coming soon, please check back on
+              14/04/2022!
+            </p>
           </div>
         </div>
 
@@ -38,7 +41,10 @@ const Portfolio = () => {
         >
           <img src={tldr} alt="too long didn't read project" />
           <div className=" opacity-0 aboutDiv absolute h-full w-full bg-white top-0 transition-opacity duration-500">
-            <h1>Learn more</h1>
+            <p className="p-5">
+              Details about this project coming soon, please check back on
+              14/04/2022!
+            </p>
           </div>
         </div>
         <div
@@ -48,7 +54,10 @@ const Portfolio = () => {
         >
           <img src={Habitat} alt="habit at project" />
           <div className=" opacity-0 aboutDiv absolute h-full w-full bg-white top-0 transition-opacity duration-500">
-            <h1>Learn more</h1>
+            <p className="p-5">
+              Details about this project coming soon, please check back on
+              14/04/2022!
+            </p>
           </div>
         </div>
       </div>
