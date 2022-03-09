@@ -5,22 +5,51 @@ import { NavLink } from "react-router-dom";
 import preFutureproof from "../../imgs/preFutureproof.png";
 import tldr from "../../imgs/tldr.png";
 import Habitat from "../../imgs/Habitat.png";
+
 const Portfolio = () => {
+  const handleMouse = (e) => {
+    e.currentTarget.querySelector(".aboutDiv").classList.toggle("opacity-0");
+  };
   return (
-    <section id="portfolio" className="min-h-screen bg-gray-200 text-slate-900">
+    <section
+      id="portfolio"
+      className="min-h-screen bg-gray-200 text-slate-900 flex flex-col"
+    >
       <h2 className=" text-center text-4xl uppercase font-medium pt-14 py-3">
         projects
       </h2>
       <div className="mx-auto w-32 border-b-4 border-solid border-pink-600 mb-10"></div>
-      <div className="grid max-w-7xl mx-auto sm:grid-cols-2">
-        <div className="bg-white">
+      <div className="grid max-w-7xl mx-auto flex-auto content-center sm:grid-cols-2">
+        <div
+          className="h-fit bg-white relative"
+          onMouseEnter={handleMouse}
+          onMouseLeave={handleMouse}
+        >
           <img src={preFutureproof} alt="pre futureproof projects" />
+          <div className="opacity-0 aboutDiv absolute h-full w-full bg-white top-0 transition-opacity duration-500">
+            <h1>Learn more</h1>
+          </div>
         </div>
-        <div>
+
+        <div
+          className="h-fit bg-white relative"
+          onMouseEnter={handleMouse}
+          onMouseLeave={handleMouse}
+        >
           <img src={tldr} alt="too long didn't read project" />
+          <div className=" opacity-0 aboutDiv absolute h-full w-full bg-white top-0 transition-opacity duration-500">
+            <h1>Learn more</h1>
+          </div>
         </div>
-        <div>
+        <div
+          className="h-fit bg-white relative"
+          onMouseEnter={handleMouse}
+          onMouseLeave={handleMouse}
+        >
           <img src={Habitat} alt="habit at project" />
+          <div className=" opacity-0 aboutDiv absolute h-full w-full bg-white top-0 transition-opacity duration-500">
+            <h1>Learn more</h1>
+          </div>
         </div>
       </div>
       {/* <nav>
