@@ -10,15 +10,15 @@ const Portfolio = () => {
   let navigate = useNavigate();
 
   useEffect(() => {
-    navigate("/");
+    navigate("");
   }, []);
 
   return (
     <section
       id="portfolio"
-      className="min-h-screen bg-gray-200 text-slate-900 flex flex-col relative"
+      className="min-h-screen bg-gray-200 text-slate-900 flex flex-col"
     >
-      <h2 className=" text-center text-4xl uppercase font-medium pt-14 py-3">
+      <h2 className=" text-center text-4xl uppercase font-medium pt-10 py-3 md:text-5xl">
         projects
       </h2>
       <div className="mx-auto w-32 border-b-4 border-solid border-pink-600 mb-10"></div>
@@ -39,7 +39,6 @@ const Portfolio = () => {
           img={Habitat}
         />
       </div>
-
       <Routes>
         <Route path="/" element={<></>} />
         <Route path=":projectId" element={<PortfolioSection />} />
