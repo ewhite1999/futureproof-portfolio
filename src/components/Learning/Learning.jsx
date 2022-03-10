@@ -12,7 +12,7 @@ const Learning = (props) => {
             className="marker:text-pink-600 list-disc ml-4 mb-1"
             key={`learning ${index}`}
           >
-            {i}
+            {i}.
           </li>
         ))}
       </ul>
