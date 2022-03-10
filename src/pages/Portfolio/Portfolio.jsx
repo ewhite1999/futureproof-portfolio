@@ -41,7 +41,7 @@ const Portfolio = () => {
       </div>
 
       <Routes>
-        <Route path="/" element={<p>Click on a link to see more about it</p>} />
+        <Route path="/" element={<></>} />
         <Route path=":projectId" element={<PortfolioSection />} />
       </Routes>
     </section>

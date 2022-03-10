@@ -4,7 +4,7 @@ import * as Pages from "./pages";
 const App = () => {
   return (
     <>
-      {/* <Pages.Home></Pages.Home> */}
+      <Pages.Home></Pages.Home>
       <Pages.Portfolio></Pages.Portfolio>
     </>
   );

@@ -17,13 +17,14 @@ const PortfolioSection = () => {
     }
     const { intro, learning, technologies, nexttime } = sectionData;
     return (
-      <>
+      <div className=" bg-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <Intro intro={intro} />
         <Learning learning={learning} />
-      </>
+      </div>
     );
   } catch (e) {
-    return <p>{e}</p>;
+    console.warn(e);
+    return <></>;
   }
 };
 
