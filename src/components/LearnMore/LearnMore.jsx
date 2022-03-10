@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const LearnMore = (props) => {
   return (
@@ -9,6 +10,10 @@ const LearnMore = (props) => {
       </button>
     </div>
   );
+};
+
+LearnMore.propTypes = {
+  title: PropTypes.string.isRequired,
 };
 
 export default LearnMore;
