@@ -5,7 +5,7 @@ const Btns = (props) => {
   return (
     <div className="flex flex-col mt-6 max-w-prose space-y-2 xsm:flex-row xsm:space-y-0 xsm:mx-auto  xsm:justify-around">
       <a
-        href={props.git}
+        href={props.git[0]}
         target="_blank"
         rel="noopener noreferrer"
         className="border-2 text-pink-600 text-center font-normal cursor-pointer px-4 py-2 border-pink-600  hover:bg-transparent hover:text-slate-50 hover:bg-pink-600 hover:transition-colors hover:duration-500 xsm:w-32"
@@ -13,7 +13,7 @@ const Btns = (props) => {
         GitHub Repo
       </a>
       <a
-        href={props.site}
+        href={props.site[0]}
         target="_blank"
         rel="noopener noreferrer"
         className="border-2 text-pink-600 text-center font-normal cursor-pointer px-4 py-2 border-pink-600  hover:bg-transparent hover:text-slate-50 hover:bg-pink-600 hover:transition-colors hover:duration-500 xsm:w-32"
@@ -28,8 +28,8 @@ const Btns = (props) => {
 };
 
 Btns.propTypes = {
-  git: PropTypes.string.isRequired,
-  site: PropTypes.string.isRequired,
+  git: PropTypes.array.isRequired,
+  site: PropTypes.array.isRequired,
 };
 
 export default Btns;

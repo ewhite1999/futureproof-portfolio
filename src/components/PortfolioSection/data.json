@@ -17,7 +17,13 @@
       "Create different react components and pass recipe data in as props",
       "Use a bundler, such as webpack, to separate the JavaScript into different files for a clearer codebase"
     ],
-    "git": "https://github.com/ewhite1999/recipes",
-    "site": "https://ewhite1999.github.io/recipes/"
+    "git": [
+      "https://github.com/ewhite1999/recipes",
+      "https://github.com/ewhite1999/physics-alevel-retrieval-starter"
+    ],
+    "site": [
+      "https://ewhite1999.github.io/recipes/",
+      "https://ewhite1999.github.io/physics-alevel-retrieval-starter/"
+    ]
   }
 }
