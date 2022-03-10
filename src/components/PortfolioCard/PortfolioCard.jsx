@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 import LearnMore from "../LearnMore";
 const PortfolioCard = (props) => {
   const handleMouse = (e) => {
@@ -15,4 +17,10 @@ const PortfolioCard = (props) => {
     </div>
   );
 };
+PortfolioCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  img: PropTypes.array.isRequired,
+};
+
 export default PortfolioCard;
