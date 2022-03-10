@@ -17,7 +17,7 @@ const Portfolio = () => {
         projects
       </h2>
       <div className="mx-auto w-32 border-b-4 border-solid border-pink-600 mb-10"></div>
-      <div className="grid max-w-7xl mx-auto flex-auto content-center sm:grid-cols-2">
+      <div className="grid max-w-7xl mx-auto flex-auto content-center md:grid-cols-2">
         <PortfolioCard
           title="Before futureproof"
           alt="a recipe page project and a physics starter project"
