@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import preFutureproof from "../../imgs/preFutureproof.png";
 import tldr from "../../imgs/tldr.png";
 import Habitat from "../../imgs/Habitat.png";
+import LearnMore from "../../components/LearnMore";
 
 const Portfolio = () => {
   const handleMouse = (e) => {
@@ -26,12 +27,7 @@ const Portfolio = () => {
           onMouseLeave={handleMouse}
         >
           <img src={preFutureproof} alt="pre futureproof projects" />
-          <div className="opacity-0 aboutDiv absolute h-full w-full bg-white top-0 transition-opacity duration-500">
-            <p className="p-5">
-              Details about this project coming soon, please check back on
-              14/04/2022!
-            </p>
-          </div>
+          <LearnMore title="Before futureproof" />
         </div>
 
         <div
@@ -40,12 +36,7 @@ const Portfolio = () => {
           onMouseLeave={handleMouse}
         >
           <img src={tldr} alt="too long didn't read project" />
-          <div className=" opacity-0 aboutDiv absolute h-full w-full bg-white top-0 transition-opacity duration-500">
-            <p className="p-5">
-              Details about this project coming soon, please check back on
-              14/04/2022!
-            </p>
-          </div>
+          <LearnMore title="Confessions Page" />
         </div>
         <div
           className="h-fit bg-white relative"
@@ -53,12 +44,7 @@ const Portfolio = () => {
           onMouseLeave={handleMouse}
         >
           <img src={Habitat} alt="habit at project" />
-          <div className=" opacity-0 aboutDiv absolute h-full w-full bg-white top-0 transition-opacity duration-500">
-            <p className="p-5">
-              Details about this project coming soon, please check back on
-              14/04/2022!
-            </p>
-          </div>
+          <LearnMore title="Habit Tracker" />
         </div>
       </div>
       {/* <nav>
