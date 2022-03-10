@@ -1,17 +1,22 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import PortfolioSection from "../../components/PortfolioSection";
-import { NavLink } from "react-router-dom";
 import preFutureproof from "../../imgs/preFutureproof.png";
 import tldr from "../../imgs/tldr.png";
 import Habitat from "../../imgs/Habitat.png";
 import PortfolioCard from "../../components/PortfolioCard";
 
 const Portfolio = () => {
+  let navigate = useNavigate();
+
+  useEffect(() => {
+    navigate("/");
+  }, []);
+
   return (
     <section
       id="portfolio"
-      className="min-h-screen bg-gray-200 text-slate-900 flex flex-col"
+      className="min-h-screen bg-gray-200 text-slate-900 flex flex-col relative"
     >
       <h2 className=" text-center text-4xl uppercase font-medium pt-14 py-3">
         projects
@@ -34,11 +39,7 @@ const Portfolio = () => {
           img={Habitat}
         />
       </div>
-      <nav>
-        <NavLink to="/before-futureproof">Before&nbsp;futureproof</NavLink>
-        <NavLink to="/confessions-page">Confessions&nbsp;page</NavLink>
-        <NavLink to="/habit-tracker">Habit&nbsp;Tracker</NavLink>
-      </nav>
+
       <Routes>
         <Route path="/" element={<p>Click on a link to see more about it</p>} />
         <Route path=":projectId" element={<PortfolioSection />} />
