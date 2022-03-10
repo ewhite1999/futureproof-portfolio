@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import Intro from "../Intro";
 import Learning from "../Learning";
+import NextTime from "../NextTime";
 import Technologies from "../Technologies";
 import * as data from "./data.json";
 
@@ -25,6 +26,7 @@ const PortfolioSection = () => {
         <Intro intro={intro} />
         <Learning learning={learning} />
         <Technologies tech={technologies} />
+        <NextTime next={nexttime} />
       </div>
     );
   } catch (e) {
