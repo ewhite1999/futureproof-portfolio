@@ -1,5 +1,6 @@
 {
   "beforefutureproof": {
+    "title": "Before futureproof",
     "intro": "After working my way through The Odin Project and freeCodeCamp, I wanted to test my skills by building some sites of my own. The first site is a store of simple vegetarian recipes, the second is meant to be used as a starter for physics A-level students. Both sites were designed to be viewed on mobile but do have simple styling for when viewed on desktop.",
     "learning": [
       "How to use JavaScript to manipulate the DOM",
