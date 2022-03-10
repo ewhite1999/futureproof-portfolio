@@ -29,7 +29,7 @@ const PortfolioSection = () => {
         <Learning learning={learning} />
         <Technologies tech={technologies} />
         <NextTime next={nexttime} />
-        <Btns />
+        <Btns git={git} site={site} />
       </div>
     );
   } catch (e) {
