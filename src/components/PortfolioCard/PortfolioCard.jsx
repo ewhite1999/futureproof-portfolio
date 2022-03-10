@@ -20,7 +20,7 @@ const PortfolioCard = (props) => {
 PortfolioCard.propTypes = {
   title: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
-  img: PropTypes.array.isRequired,
+  img: PropTypes.string.isRequired,
 };
 
 export default PortfolioCard;

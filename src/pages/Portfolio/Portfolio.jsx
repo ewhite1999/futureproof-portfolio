@@ -34,7 +34,7 @@ const Portfolio = () => {
           img={Habitat}
         />
       </div>
-      {/* <nav>
+      <nav>
         <NavLink to="/before-futureproof">Before&nbsp;futureproof</NavLink>
         <NavLink to="/confessions-page">Confessions&nbsp;page</NavLink>
         <NavLink to="/habit-tracker">Habit&nbsp;Tracker</NavLink>
@@ -42,7 +42,7 @@ const Portfolio = () => {
       <Routes>
         <Route path="/" element={<p>Click on a link to see more about it</p>} />
         <Route path=":projectId" element={<PortfolioSection />} />
-      </Routes> */}
+      </Routes>
     </section>
   );
 };
