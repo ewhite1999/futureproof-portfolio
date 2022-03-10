@@ -5,12 +5,9 @@ import { NavLink } from "react-router-dom";
 import preFutureproof from "../../imgs/preFutureproof.png";
 import tldr from "../../imgs/tldr.png";
 import Habitat from "../../imgs/Habitat.png";
-import LearnMore from "../../components/LearnMore";
+import PortfolioCard from "../../components/PortfolioCard";
 
 const Portfolio = () => {
-  const handleMouse = (e) => {
-    e.currentTarget.querySelector(".aboutDiv").classList.toggle("opacity-0");
-  };
   return (
     <section
       id="portfolio"
@@ -21,31 +18,21 @@ const Portfolio = () => {
       </h2>
       <div className="mx-auto w-32 border-b-4 border-solid border-pink-600 mb-10"></div>
       <div className="grid max-w-7xl mx-auto flex-auto content-center sm:grid-cols-2">
-        <div
-          className="h-fit bg-white relative"
-          onMouseEnter={handleMouse}
-          onMouseLeave={handleMouse}
-        >
-          <img src={preFutureproof} alt="pre futureproof projects" />
-          <LearnMore title="Before futureproof" />
-        </div>
-
-        <div
-          className="h-fit bg-white relative"
-          onMouseEnter={handleMouse}
-          onMouseLeave={handleMouse}
-        >
-          <img src={tldr} alt="too long didn't read project" />
-          <LearnMore title="Confessions Page" />
-        </div>
-        <div
-          className="h-fit bg-white relative"
-          onMouseEnter={handleMouse}
-          onMouseLeave={handleMouse}
-        >
-          <img src={Habitat} alt="habit at project" />
-          <LearnMore title="Habit Tracker" />
-        </div>
+        <PortfolioCard
+          title="Before futureproof"
+          alt="a recipe page project and a physics starter project"
+          img={preFutureproof}
+        />
+        <PortfolioCard
+          title="Confessions Page"
+          alt="the words too long didn't read written on a blue background"
+          img={tldr}
+        />
+        <PortfolioCard
+          title="Habit Tracker"
+          alt="a habit tracker site styled like a book"
+          img={Habitat}
+        />
       </div>
       {/* <nav>
         <NavLink to="/before-futureproof">Before&nbsp;futureproof</NavLink>
