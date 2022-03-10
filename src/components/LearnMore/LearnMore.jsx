@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { NavLink } from "react-router-dom";
 
 const LearnMore = (props) => {
   return (
@@ -8,9 +9,12 @@ const LearnMore = (props) => {
       <h3 className=" text-2xl font-medium xsm:text-3xl md:text-2xl lg:text-3xl">
         {props.title}
       </h3>
-      <button className="border-2 cursor-pointer px-4 py-2 font-extralight border-pink-600  hover:bg-transparent hover:bg-pink-600 hover:text-zinc-50 hover:transition-colors hover:duration-500 xsm:text-xl md:text-base lg:text-xl">
+      <NavLink
+        to={props.title.replace(/\W+/g, "-").toLowerCase()}
+        className="border-2 cursor-pointer px-4 py-2 font-extralight border-pink-600  hover:bg-transparent hover:bg-pink-600 hover:text-zinc-50 hover:transition-colors hover:duration-500 xsm:text-xl md:text-base lg:text-xl"
+      >
         Learn more
-      </button>
+      </NavLink>
     </div>
   );
 };
