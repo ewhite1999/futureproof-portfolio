@@ -6,7 +6,7 @@ const Learning = (props) => {
       <h3 className="text-2xl  font-normal mt-5 mb-2 text-pink-600">
         Learning:
       </h3>
-      <ul>
+      <ul className="max-w-prose">
         {props.learning.map((i, index) => (
           <li
             className="marker:text-pink-600 list-disc ml-4 mb-1"
