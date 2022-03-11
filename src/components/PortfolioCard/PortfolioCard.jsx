@@ -4,7 +4,9 @@ import { isBrowser } from "react-device-detect";
 import LearnMore from "../LearnMore";
 const PortfolioCard = (props) => {
   const handleMouse = (e) => {
+    const btn = e.currentTarget.querySelector("#learnMoreBtn");
     e.currentTarget.querySelector(".aboutDiv").classList.toggle("opacity-0");
+    btn.classList.toggle("hidden");
   };
   if (isBrowser) {
     return (
