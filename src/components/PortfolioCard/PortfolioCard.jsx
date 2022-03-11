@@ -9,8 +9,11 @@ const PortfolioCard = (props) => {
       div.classList.remove("opacity-0");
       div.classList.add("opacity-0");
     });
-
-    const btn = e.currentTarget.querySelector("#learnMoreBtn");
+    document.querySelectorAll(".learnMoreBtn").forEach((btn) => {
+      btn.classList.remove("hidden");
+      btn.classList.add("hidden");
+    });
+    const btn = e.currentTarget.querySelector(".learnMoreBtn");
     e.currentTarget.querySelector(".aboutDiv").classList.toggle("opacity-0");
     btn.classList.toggle("hidden");
   };
