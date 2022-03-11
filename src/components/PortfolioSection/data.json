@@ -52,5 +52,30 @@
     ],
     "git": ["https://github.com/ewhite1999/Heres-Roneey"],
     "site": ["https://tldr-blog.netlify.app/"]
+  },
+  "habittracker": {
+    "title": "Habit Tracker",
+    "intro": "As a team of three, our goal was to create a habit tracker where a user could log in, create a custom habit, choose which days they would like to track the habit, and be shown how many times they have completed their habit.",
+    "role": [
+      "As my role on the previous project was mainly on the front-end, I wanted to use this project as an opportunity to practice my back-end skills. With that goal in mind, the first thing I did was create the docker-compose files needed for our development environment.",
+      "I spent the first day of the project creating a PostgreSQL database to store the habit data. I also used express to create a restful API to perform the required CRUD operations. After the database and API had been set up, I moved onto the front-end to help my teammates with the styling. I was responsible for styling the page where the habits are displayed (shown in the screenshot)."
+    ],
+    "learning": [
+      "How to create a docker-compose file for a dev and test environment",
+      "How to prevent SQL injection using parameterised queries",
+      "How to build an API and use it to access a database"
+    ],
+    "technologies": [
+      "Express - this was used as it provides a simple way of implementing routing",
+      "Postgres - we chose a relational database as we knew that we were going to have rigid data types and thought creating a schema for a SQL database was easier",
+      "PostCSS - this was used to add vendor prefixes and to minify the CSS for the deployed site"
+    ],
+    "nexttime": [
+      "Use a NoSQL database, such as Mongo. Our site allows users to choose custom habits to track. This led to a slim chance of different users having the same habit making the need for a relational database redundant",
+      "I would also have taken a TDD approach. I believe writing the tests beforehand would have given the whole team a stronger direction for our final goal and would have saved the time we spent manually checking the site after each change",
+      "I also would have used a mobile-first approach as most people would want the convenience of habit tracking from their phone"
+    ],
+    "git": ["https://github.com/ewhite1999/habitat/tree/staging"],
+    "site": ["https://habitat-tracker.netlify.app/"]
   }
 }
