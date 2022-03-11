@@ -26,29 +26,31 @@
       "https://ewhite1999.github.io/physics-alevel-retrieval-starter/"
     ]
   },
-  "title": "Confessions Page",
-  "intro": "As a team of four, our goal was to create a site where users could view and anonymously post short confessions as well as comment on other people’s. As with all projects, we had five days to create the site with a feature freeze coming at the end of the third day.",
-  "role": [
-    "My main role on this project was the front-end. I was responsible for using an API built by a teammate to fetch the required data, display the data onto confession cards, generate a form for the user to submit a new confession, use a different route on the API to store the new confession server-side, and styling the page.",
-    "In addition to the front-end, one of my teammates and I were responsible for deploying the server-side on Heroku which gave me my first taste of environment variables."
-  ],
-  "learning": [
-    "How to implement a bundler (browserify)",
-    "How to test JavaScript functions that modify the DOM",
-    "How to fetch and process data from an API",
-    "How to use prettier to help reduce merge conflicts when multiple people are working on the same file",
-    "How to use CSS variables to make the number of columns in a grid responsive",
-    "How to use the ::after pseudo-element to create a darker version of the current colour without needing to define a new colour"
-  ],
-  "technologies": [
-    "GitHub - This was my first group project and we decided on a distributed, CI workflow",
-    "Browserify - due to the size of the project, having one JavaScript file quickly became unmanageable. Using a bundler helped to make our code clearer and prevent merge conflicts",
-    "Jest - We wanted a minimum of 60% test coverage with a target of 80%. We chose jest due to its ease of setup and good documentation"
-  ],
-  "nexttime": [
-    "Use React to create components for each part of the page with the confessions data being passed as props",
-    "Use Redux to dynamically update the page when new data is added to the server instead of using JavaScript to force a page reload"
-  ],
-  "git": ["https://github.com/ewhite1999/Heres-Roneey"],
-  "site": ["https://tldr-blog.netlify.app/"]
+  "confessionspage": {
+    "title": "Confessions Page",
+    "intro": "As a team of four, our goal was to create a site where users could view and anonymously post short confessions as well as comment on other people’s. As with all projects, we had five days to create the site with a feature freeze coming at the end of the third day.",
+    "role": [
+      "My main role on this project was the front-end. I was responsible for using an API built by a teammate to fetch the required data, display the data onto confession cards, generate a form for the user to submit a new confession, use a different route on the API to store the new confession server-side, and styling the page.",
+      "In addition to the front-end, one of my teammates and I were responsible for deploying the server-side on Heroku which gave me my first taste of environment variables."
+    ],
+    "learning": [
+      "How to implement a bundler (browserify)",
+      "How to test JavaScript functions that modify the DOM",
+      "How to fetch and process data from an API",
+      "How to use prettier to help reduce merge conflicts when multiple people are working on the same file",
+      "How to use CSS variables to make the number of columns in a grid responsive",
+      "How to use the ::after pseudo-element to create a darker version of the current colour without needing to define a new colour"
+    ],
+    "technologies": [
+      "GitHub - This was my first group project and we decided on a distributed, CI workflow",
+      "Browserify - due to the size of the project, having one JavaScript file quickly became unmanageable. Using a bundler helped to make our code clearer and prevent merge conflicts",
+      "Jest - We wanted a minimum of 60% test coverage with a target of 80%. We chose jest due to its ease of setup and good documentation"
+    ],
+    "nexttime": [
+      "Use React to create components for each part of the page with the confessions data being passed as props",
+      "Use Redux to dynamically update the page when new data is added to the server instead of using JavaScript to force a page reload"
+    ],
+    "git": ["https://github.com/ewhite1999/Heres-Roneey"],
+    "site": ["https://tldr-blog.netlify.app/"]
+  }
 }
