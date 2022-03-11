@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 
 const Btns = (props) => {
+  let navigate = useNavigate();
+  const [hide, setHide] = useState();
+  useEffect(() => {
+    if (hide) navigate("/");
+  }, [hide]);
+
   const numberOfSites = props.git.length;
   if (numberOfSites === 2) {
     return (
@@ -42,7 +49,15 @@ const Btns = (props) => {
             Revision Site
           </a>
         </div>
-        <button className="border-2 text-pink-600 text-center font-normal cursor-pointer px-4 py-2 border-pink-600  hover:bg-transparent hover:text-slate-50 hover:bg-pink-600 hover:transition-colors hover:duration-500 ">
+        <button
+          onClick={() => {
+            setHide("hide");
+            const div = document.querySelector("#darkCover");
+            div.classList.add("opacity-0", "invisible");
+            div.classList.remove("opacity-70");
+          }}
+          className="border-2 text-pink-600 text-center font-normal cursor-pointer px-4 py-2 border-pink-600  hover:bg-transparent hover:text-slate-50 hover:bg-pink-600 hover:transition-colors hover:duration-500 "
+        >
           Close
         </button>
       </div>
@@ -66,7 +81,15 @@ const Btns = (props) => {
       >
         Live Site
       </a>
-      <button className="border-2 text-pink-600 text-center font-normal cursor-pointer px-4 py-2 border-pink-600  hover:bg-transparent hover:text-slate-50 hover:bg-pink-600 hover:transition-colors hover:duration-500 xsm:w-32">
+      <button
+        onClick={() => {
+          setHide("hide");
+          const div = document.querySelector("#darkCover");
+          div.classList.add("opacity-0", "invisible");
+          div.classList.remove("opacity-70");
+        }}
+        className="border-2 text-pink-600 text-center font-normal cursor-pointer px-4 py-2 border-pink-600  hover:bg-transparent hover:text-slate-50 hover:bg-pink-600 hover:transition-colors hover:duration-500 xsm:w-32"
+      >
         Close
       </button>
     </div>
