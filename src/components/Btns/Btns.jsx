@@ -12,7 +12,7 @@ const Btns = (props) => {
   const numberOfSites = props.git.length;
   if (numberOfSites === 2) {
     return (
-      <div className="flex flex-col mt-6 max-w-prose space-y-2  ">
+      <div className="flex flex-col mt-6 max-w-prose space-y-2 ">
         <div className="flex space-x-2">
           <a
             href={props.git[0]}
@@ -64,7 +64,7 @@ const Btns = (props) => {
     );
   }
   return (
-    <div className="flex flex-col mt-6 max-w-prose space-y-2 xsm:flex-row xsm:space-y-0 xsm:mx-auto  xsm:justify-around">
+    <div className="flex flex-col mt-6 max-w-prose space-y-2 w-full xsm:flex-row xsm:space-y-0 xsm:mx-auto  xsm:justify-around">
       <a
         href={props.git[0]}
         target="_blank"
