@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { isBrowser, isMobile } from "react-device-detect";
+import { isBrowser } from "react-device-detect";
 import LearnMore from "../LearnMore";
 const PortfolioCard = (props) => {
   const handleMouse = (e) => {

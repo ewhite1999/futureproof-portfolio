@@ -15,7 +15,7 @@ const LearnMore = (props) => {
           div.classList.add("opacity-70");
         }}
         to={props.title.replace(/\W+/g, "-").toLowerCase()}
-        className="border-2 cursor-pointer px-4 py-2 font-extralight border-pink-600  hover:bg-transparent hover:bg-pink-600 hover:text-zinc-50 hover:transition-colors hover:duration-500 xsm:text-xl md:text-base lg:text-xl"
+        className="hidden border-2 cursor-pointer px-4 py-2 font-extralight border-pink-600  hover:bg-transparent hover:bg-pink-600 hover:text-zinc-50 hover:transition-colors hover:duration-500 xsm:text-xl md:text-base lg:text-xl"
       >
         Learn more
       </NavLink>
