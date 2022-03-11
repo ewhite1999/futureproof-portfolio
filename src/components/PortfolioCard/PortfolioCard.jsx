@@ -3,14 +3,21 @@ import PropTypes from "prop-types";
 
 import LearnMore from "../LearnMore";
 const PortfolioCard = (props) => {
-  const handleMouse = (e) => {
+  const handleClick = (e) => {
     e.currentTarget.querySelector(".aboutDiv").classList.toggle("opacity-0");
+  };
+  const handleEnter = (e) => {
+    e.currentTarget.querySelector(".aboutDiv").classList.remove("opacity-0");
+  };
+  const handleLeave = (e) => {
+    e.currentTarget.querySelector(".aboutDiv").classList.add("opacity-0");
   };
   return (
     <div
       className="h-fit bg-white relative"
-      onMouseEnter={handleMouse}
-      onMouseLeave={handleMouse}
+      onMouseEnter={handleEnter}
+      onMouseLeave={handleLeave}
+      onClick={handleClick}
     >
       <img src={props.img} alt={props.alt} />
       <LearnMore title={props.title} />
