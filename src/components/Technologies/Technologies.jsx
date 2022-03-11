@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-const Learning = (props) => {
+const Technologies = (props) => {
   return (
     <>
-      <h3 className="text-2xl  font-normal mt-5 mb-2 text-pink-600">
-        Learning:
+      <h3 className="text-2xl font-normal mt-5 mb-2 text-pink-600">
+        Technologies:
       </h3>
       <ul className="max-w-prose">
-        {props.learning.map((i, index) => (
+        {props.tech.map((i, index) => (
           <li
             className="marker:text-pink-600 list-disc ml-4 mb-1"
             key={`learning ${index}`}
@@ -20,7 +20,7 @@ const Learning = (props) => {
   );
 };
 
-Learning.propTypes = {
-  learning: PropTypes.array.isRequired,
+Technologies.propTypes = {
+  tech: PropTypes.array.isRequired,
 };
-export default Learning;
+export default Technologies;

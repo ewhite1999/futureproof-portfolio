@@ -1,5 +1,6 @@
 {
   "beforefutureproof": {
+    "title": "Before futureproof",
     "intro": "After working my way through The Odin Project and freeCodeCamp, I wanted to test my skills by building some sites of my own. The first site is a store of simple vegetarian recipes, the second is meant to be used as a starter for physics A-level students. Both sites were designed to be viewed on mobile but do have simple styling for when viewed on desktop.",
     "learning": [
       "How to use JavaScript to manipulate the DOM",
@@ -15,6 +16,66 @@
     "nexttime": [
       "Create different react components and pass recipe data in as props",
       "Use a bundler, such as webpack, to separate the JavaScript into different files for a clearer codebase"
+    ],
+    "git": [
+      "https://github.com/ewhite1999/recipes",
+      "https://github.com/ewhite1999/physics-alevel-retrieval-starter"
+    ],
+    "site": [
+      "https://ewhite1999.github.io/recipes/",
+      "https://ewhite1999.github.io/physics-alevel-retrieval-starter/"
     ]
+  },
+  "confessionspage": {
+    "title": "Confessions Page",
+    "intro": "As a team of four, our goal was to create a site where users could view and anonymously post short confessions as well as comment on other people’s. As with all projects, we had five days to create the site with a feature freeze coming at the end of the third day.",
+    "role": [
+      "My main role on this project was the front-end. I was responsible for using an API built by a teammate to fetch the required data, display the data onto confession cards, generate a form for the user to submit a new confession, use a different route on the API to store the new confession server-side, and styling the page.",
+      "In addition to the front-end, one of my teammates and I were responsible for deploying the server-side on Heroku which gave me my first taste of environment variables."
+    ],
+    "learning": [
+      "How to implement a bundler (browserify)",
+      "How to test JavaScript functions that modify the DOM",
+      "How to fetch and process data from an API",
+      "How to use prettier to help reduce merge conflicts when multiple people are working on the same file",
+      "How to use CSS variables to make the number of columns in a grid responsive",
+      "How to use the ::after pseudo-element to create a darker version of the current colour without needing to define a new colour"
+    ],
+    "technologies": [
+      "GitHub - This was my first group project and we decided on a distributed, CI workflow",
+      "Browserify - due to the size of the project, having one JavaScript file quickly became unmanageable. Using a bundler helped to make our code clearer and prevent merge conflicts",
+      "Jest - We wanted a minimum of 60% test coverage with a target of 80%. We chose jest due to its ease of setup and good documentation"
+    ],
+    "nexttime": [
+      "Use React to create components for each part of the page with the confessions data being passed as props",
+      "Use Redux to dynamically update the page when new data is added to the server instead of using JavaScript to force a page reload"
+    ],
+    "git": ["https://github.com/ewhite1999/Heres-Roneey"],
+    "site": ["https://tldr-blog.netlify.app/"]
+  },
+  "habittracker": {
+    "title": "Habit Tracker",
+    "intro": "As a team of three, our goal was to create a habit tracker where a user could log in, create a custom habit, choose which days they would like to track the habit, and be shown how many times they have completed their habit.",
+    "role": [
+      "As my role on the previous project was mainly on the front-end, I wanted to use this project as an opportunity to practice my back-end skills. With that goal in mind, the first thing I did was create the docker-compose files needed for our development environment.",
+      "I spent the first day of the project creating a PostgreSQL database to store the habit data. I also used express to create a restful API to perform the required CRUD operations. After the database and API had been set up, I moved onto the front-end to help my teammates with the styling. I was responsible for styling the page where the habits are displayed (shown in the screenshot)."
+    ],
+    "learning": [
+      "How to create a docker-compose file for a dev and test environment",
+      "How to prevent SQL injection using parameterised queries",
+      "How to build an API and use it to access a database"
+    ],
+    "technologies": [
+      "Express - this was used as it provides a simple way of implementing routing",
+      "Postgres - we chose a relational database as we knew that we were going to have rigid data types and thought creating a schema for a SQL database was easier",
+      "PostCSS - this was used to add vendor prefixes and to minify the CSS for the deployed site"
+    ],
+    "nexttime": [
+      "Use a NoSQL database, such as Mongo. Our site allows users to choose custom habits to track. This led to a slim chance of different users having the same habit making the need for a relational database redundant",
+      "I would also have taken a TDD approach. I believe writing the tests beforehand would have given the whole team a stronger direction for our final goal and would have saved the time we spent manually checking the site after each change",
+      "I also would have used a mobile-first approach as most people would want the convenience of habit tracking from their phone"
+    ],
+    "git": ["https://github.com/ewhite1999/habitat/tree/staging"],
+    "site": ["https://habitat-tracker.netlify.app/"]
   }
 }

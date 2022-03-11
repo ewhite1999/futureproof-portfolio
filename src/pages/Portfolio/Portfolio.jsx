@@ -1,75 +1,48 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import PortfolioSection from "../../components/PortfolioSection";
-import { NavLink } from "react-router-dom";
 import preFutureproof from "../../imgs/preFutureproof.png";
 import tldr from "../../imgs/tldr.png";
 import Habitat from "../../imgs/Habitat.png";
+import PortfolioCard from "../../components/PortfolioCard";
 
 const Portfolio = () => {
-  const handleMouse = (e) => {
-    e.currentTarget.querySelector(".aboutDiv").classList.toggle("opacity-0");
-  };
+  let navigate = useNavigate();
+
+  useEffect(() => {
+    navigate("");
+  }, []);
+
   return (
     <section
       id="portfolio"
       className="min-h-screen bg-gray-200 text-slate-900 flex flex-col"
     >
-      <h2 className=" text-center text-4xl uppercase font-medium pt-14 py-3">
+      <h2 className=" text-center text-4xl uppercase font-medium pt-10 py-3 md:text-5xl">
         projects
       </h2>
       <div className="mx-auto w-32 border-b-4 border-solid border-pink-600 mb-10"></div>
-      <div className="grid max-w-7xl mx-auto flex-auto content-center sm:grid-cols-2">
-        <div
-          className="h-fit bg-white relative"
-          onMouseEnter={handleMouse}
-          onMouseLeave={handleMouse}
-        >
-          <img src={preFutureproof} alt="pre futureproof projects" />
-          <div className="opacity-0 aboutDiv absolute h-full w-full bg-white top-0 transition-opacity duration-500">
-            <p className="p-5">
-              Details about this project coming soon, please check back on
-              14/04/2022!
-            </p>
-          </div>
-        </div>
-
-        <div
-          className="h-fit bg-white relative"
-          onMouseEnter={handleMouse}
-          onMouseLeave={handleMouse}
-        >
-          <img src={tldr} alt="too long didn't read project" />
-          <div className=" opacity-0 aboutDiv absolute h-full w-full bg-white top-0 transition-opacity duration-500">
-            <p className="p-5">
-              Details about this project coming soon, please check back on
-              14/04/2022!
-            </p>
-          </div>
-        </div>
-        <div
-          className="h-fit bg-white relative"
-          onMouseEnter={handleMouse}
-          onMouseLeave={handleMouse}
-        >
-          <img src={Habitat} alt="habit at project" />
-          <div className=" opacity-0 aboutDiv absolute h-full w-full bg-white top-0 transition-opacity duration-500">
-            <p className="p-5">
-              Details about this project coming soon, please check back on
-              14/04/2022!
-            </p>
-          </div>
-        </div>
+      <div className="grid max-w-7xl mx-auto flex-auto content-center md:grid-cols-2">
+        <PortfolioCard
+          title="Before futureproof"
+          alt="a recipe page project and a physics starter project"
+          img={preFutureproof}
+        />
+        <PortfolioCard
+          title="Confessions Page"
+          alt="the words too long didn't read written on a blue background"
+          img={tldr}
+        />
+        <PortfolioCard
+          title="Habit Tracker"
+          alt="a habit tracker site styled like a book"
+          img={Habitat}
+        />
       </div>
-      {/* <nav>
-        <NavLink to="/before-futureproof">Before&nbsp;futureproof</NavLink>
-        <NavLink to="/confessions-page">Confessions&nbsp;page</NavLink>
-        <NavLink to="/habit-tracker">Habit&nbsp;Tracker</NavLink>
-      </nav>
       <Routes>
-        <Route path="/" element={<p>Click on a link to see more about it</p>} />
+        <Route path="/" element={<></>} />
         <Route path=":projectId" element={<PortfolioSection />} />
-      </Routes> */}
+      </Routes>
     </section>
   );
 };
