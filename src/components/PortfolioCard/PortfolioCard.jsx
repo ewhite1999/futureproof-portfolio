@@ -6,17 +6,19 @@ const PortfolioCard = (props) => {
   const handleMouse = (e) => {
     // Hide all learn more sections
     document.querySelectorAll(".aboutDiv").forEach((div) => {
-      if (!e.currentTarget.querySelector(".aboutDiv") === div) {
+      if (e.currentTarget.querySelector(".aboutDiv") !== div) {
         div.classList.remove("opacity-0");
         div.classList.add("opacity-0");
       }
     });
-    document.querySelectorAll(".learnMoreBtn").forEach((btn) => {
-      btn.classList.remove("hidden");
-      btn.classList.add("hidden");
+    document.querySelectorAll(".learnMoreBtn").forEach((button) => {
+      if (e.currentTarget.querySelector(".learnMoreBtn") !== button) {
+        button.classList.remove("hidden");
+        button.classList.add("hidden");
+      }
     });
-    const btn = e.currentTarget.querySelector(".learnMoreBtn");
     e.currentTarget.querySelector(".aboutDiv").classList.toggle("opacity-0");
+    const btn = e.currentTarget.querySelector(".learnMoreBtn");
     btn.classList.toggle("hidden");
   };
   if (isBrowser) {
